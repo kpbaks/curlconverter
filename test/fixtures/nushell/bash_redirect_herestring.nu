@@ -1,0 +1,1 @@
+http post --headers { r#''Accept''#: r#''application/json''#, 'Authorization': 'Bearer 000000000000000-0000' } --content-type 'application/json' --redirect-mode manual 'http://localhost:28139/api/servers/00000000000/shared_servers/' (open --raw '-')

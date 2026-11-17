@@ -1,0 +1,1 @@
+http post --headers { 'X-API-Version': '200' } --content-type 'application/json' --insecure --redirect-mode manual 'http://localhost:28139/rest/login-sessions' '{"userName":"username123","password":"password123", "authLoginDomain":"local"}'

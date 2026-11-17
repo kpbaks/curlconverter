@@ -1,0 +1,1 @@
+http put --content-type 'application/x-www-form-urlencoded' --user 'admin' --password '123' --redirect-mode manual 'http://localhost:28139/test/_security' '{"admins":{"names":[], "roles":[]}, "readers":{"names":["joe"],"roles":[]}}'

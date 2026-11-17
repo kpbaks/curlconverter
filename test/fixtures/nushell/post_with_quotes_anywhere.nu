@@ -1,0 +1,1 @@
+http post --headers { 'A': r#'''a''#, 'B': '"', 'Cookie': r#'x=1'; y=2"'# } --content-type 'application/x-www-form-urlencoded' --user r#'ol''# --password 'asd"' --redirect-mode manual 'http://localhost:28139' r#'a=b&c="&d=''#

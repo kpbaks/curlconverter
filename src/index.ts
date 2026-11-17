@@ -52,6 +52,7 @@ export {
   toNodeRequest,
   toNodeRequestWarn,
 } from "./generators/javascript/request.ts";
+export { toNushell, toNushellWarn } from "./generators/nushell.ts";
 export { toObjectiveC, toObjectiveCWarn } from "./generators/objectivec.ts";
 export { toOCaml, toOCamlWarn } from "./generators/ocaml.ts";
 export { toPerl, toPerlWarn } from "./generators/perl.ts";

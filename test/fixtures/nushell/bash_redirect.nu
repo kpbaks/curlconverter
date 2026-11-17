@@ -1,0 +1,1 @@
+http post --headers { 'X-Requested-With': 'curl' } --content-type 'text/xml' --user 'USER' --password 'PASS' --redirect-mode manual 'http://localhost:28139/api/2.0/fo/auth/unix/?action=create&title=UnixRecord&username=root&password=abc123&ips=10.10.10.10' (open --raw 'add_params.xml')

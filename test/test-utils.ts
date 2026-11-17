@@ -185,6 +185,11 @@ const converters = {
     extension: ".js",
     converter: curlconverter.toNodeSuperAgent,
   },
+  nushell: {
+    name: "Nushell",
+    extension: ".nu",
+    converter: curlconverter.toNushell,
+  },
   objectivec: {
     name: "Objective-C",
     extension: ".m",

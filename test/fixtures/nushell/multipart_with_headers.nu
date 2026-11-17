@@ -1,0 +1,1 @@
+http post --headers { 'Authorization': 'Bearer ACCESS_TOKEN', 'X-Nice': 'Header' } --content-type 'multipart/form-data' --redirect-mode manual 'http://localhost:28139/api/2.0/files/content' { 'attributes': '{"name":"tigers.jpeg", "parent":{"id":"11446498"}}', 'file': (open --raw 'myfile.jpg') }

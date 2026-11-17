@@ -1,0 +1,1 @@
+http post --headers { 'accept': 'application/json' } --content-type 'multipart/form-data' --redirect-mode manual 'http://localhost:28139/api/library' { 'files': (open --raw '47.htz'), 'name': '47', 'oldMediaId': '47', 'updateInLayouts': '1', 'deleteOldRevisions': '1' }

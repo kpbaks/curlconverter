@@ -165,6 +165,11 @@ import {
   supportedArgs as supportedArgsNodeSuperAgent,
 } from "./generators/javascript/superagent.ts";
 import {
+  _toNushell,
+  toNushellWarn,
+  supportedArgs as supportedArgsNushell,
+} from "./generators/nushell.ts";
+import {
   _toOCaml,
   toOCamlWarn,
   supportedArgs as supportedArgsOCaml,
@@ -320,6 +325,8 @@ const translate: {
   "nodejs-request": [_toNodeRequest, toNodeRequestWarn, supportedArgsNodeRequest], // undocumented alias
   "nodejs-superagent": [_toNodeSuperAgent, toNodeSuperAgentWarn, supportedArgsNodeSuperAgent], // undocumented alias
   "nodejs-xhr": [_toJavaScriptXHR, toJavaScriptXHRWarn, supportedArgsJavaScriptXHR], // undocumented alias
+  nu: [_toNushell, toNushellWarn, supportedArgsNushell], // undocumented alias
+  nushell: [_toNushell, toNushellWarn, supportedArgsNushell],
   objc: [_toObjectiveC, toObjectiveCWarn, supportedArgsObjectiveC],
   objectivec: [_toObjectiveC, toObjectiveCWarn, supportedArgsObjectiveC], // undocumented alias
   "objective-c": [_toObjectiveC, toObjectiveCWarn, supportedArgsObjectiveC], // undocumented alias
@@ -378,6 +385,7 @@ language: the language to convert the curl command to. The choices are
   node-ky
   node-request
   node-superagent
+  nushell
   objc
   ocaml
   perl

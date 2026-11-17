@@ -1,0 +1,1 @@
+http post --headers { 'Accept': 'application/sparql-results+json' } --content-type 'application/sparql-query' --redirect-mode manual 'http://localhost:28139/american-art/query' (open --raw './sample.sparql')
